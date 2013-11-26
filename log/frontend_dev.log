@@ -1,0 +1,474 @@
+nov 26 02:43:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:43:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:43:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:43:53 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:43:53 symfony [err] {sfRenderException} The template "validarSuccess.php" does not exist or is unreadable in "".
+nov 26 02:43:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov 26 02:43:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:43:53 symfony [info] {sfWebDebugLogger} Configuration 182.13 ms (9)
+nov 26 02:43:53 symfony [info] {sfWebDebugLogger} Factories 411.81 ms (1)
+nov 26 02:43:53 symfony [info] {sfWebDebugLogger} Action "login/validar" 0.11 ms (1)
+nov 26 02:43:53 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 60.98 ms (1)
+nov 26 02:44:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:44:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:44:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:44:54 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:44:54 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 02:44:54 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:44:54 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:44:54 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 02:44:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 02:44:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:44:54 symfony [info] {sfWebDebugLogger} Configuration 6.86 ms (9)
+nov 26 02:44:54 symfony [info] {sfWebDebugLogger} Factories 31.66 ms (1)
+nov 26 02:44:54 symfony [info] {sfWebDebugLogger} Action "login/validar" 0.11 ms (1)
+nov 26 02:44:54 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 12.26 ms (1)
+nov 26 02:44:54 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.96 ms (1)
+nov 26 02:44:54 symfony [info] {sfWebResponse} Send content (31565 o)
+nov 26 02:45:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /login with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 02:45:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:45:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:45:02 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 02:45:02 symfony [info] {myUser} User is not authenticated
+nov 26 02:45:02 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 02:45:02 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:45:02 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:45:02 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 02:45:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 02:45:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:45:02 symfony [info] {sfWebDebugLogger} Configuration 8.25 ms (9)
+nov 26 02:45:02 symfony [info] {sfWebDebugLogger} Factories 30.11 ms (1)
+nov 26 02:45:02 symfony [info] {sfWebDebugLogger} Action "login/index" 0.16 ms (1)
+nov 26 02:45:02 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 13.75 ms (1)
+nov 26 02:45:02 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.94 ms (1)
+nov 26 02:45:02 symfony [info] {sfWebResponse} Send content (32630 o)
+nov 26 02:45:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:45:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:45:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:45:07 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:45:07 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 02:45:07 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:45:07 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:45:07 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 02:45:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 02:45:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:45:07 symfony [info] {sfWebDebugLogger} Configuration 8.81 ms (9)
+nov 26 02:45:07 symfony [info] {sfWebDebugLogger} Factories 30.38 ms (1)
+nov 26 02:45:07 symfony [info] {sfWebDebugLogger} Action "login/validar" 0.09 ms (1)
+nov 26 02:45:07 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 13.21 ms (1)
+nov 26 02:45:07 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.94 ms (1)
+nov 26 02:45:07 symfony [info] {sfWebResponse} Send content (31876 o)
+nov 26 02:45:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:45:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:45:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:45:22 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:45:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 02:45:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara) - ()
+nov 26 02:45:22 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cyara' in 'where clause'. Failing Query: "SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara)"
+nov 26 02:45:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov 26 02:45:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:45:22 symfony [info] {sfWebDebugLogger} Configuration 7.60 ms (8)
+nov 26 02:45:22 symfony [info] {sfWebDebugLogger} Factories 30.17 ms (1)
+nov 26 02:45:22 symfony [info] {sfWebDebugLogger} Action "login/validar" 70.39 ms (1)
+nov 26 02:45:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.18 ms (1)
+nov 26 02:46:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:46:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:46:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:46:37 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:46:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 02:46:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara) - ()
+nov 26 02:46:37 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cyara' in 'where clause'. Failing Query: "SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara)"
+nov 26 02:46:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov 26 02:46:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:46:37 symfony [info] {sfWebDebugLogger} Configuration 8.22 ms (8)
+nov 26 02:46:37 symfony [info] {sfWebDebugLogger} Factories 29.05 ms (1)
+nov 26 02:46:37 symfony [info] {sfWebDebugLogger} Action "login/validar" 72.57 ms (1)
+nov 26 02:46:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.18 ms (1)
+nov 26 02:46:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:46:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:46:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:46:47 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:46:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 02:46:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara) - ()
+nov 26 02:46:47 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cyara' in 'where clause'. Failing Query: "SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara)"
+nov 26 02:46:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov 26 02:46:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:46:47 symfony [info] {sfWebDebugLogger} Configuration 9.24 ms (8)
+nov 26 02:46:47 symfony [info] {sfWebDebugLogger} Factories 27.99 ms (1)
+nov 26 02:46:47 symfony [info] {sfWebDebugLogger} Action "login/validar" 70.25 ms (1)
+nov 26 02:46:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.16 ms (1)
+nov 26 02:46:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:46:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:46:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:46:55 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:46:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 02:46:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara) - ()
+nov 26 02:46:55 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cyara' in 'where clause'. Failing Query: "SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = cyara)"
+nov 26 02:46:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov 26 02:46:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:46:55 symfony [info] {sfWebDebugLogger} Configuration 153.06 ms (8)
+nov 26 02:46:55 symfony [info] {sfWebDebugLogger} Factories 77.27 ms (1)
+nov 26 02:46:55 symfony [info] {sfWebDebugLogger} Action "login/validar" 68.79 ms (1)
+nov 26 02:46:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.12 ms (1)
+nov 26 02:47:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:47:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:47:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:47:55 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:47:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 02:47:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 02:47:55 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 02:47:55 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:47:55 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:47:55 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 02:47:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 02:47:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:47:55 symfony [info] {sfWebDebugLogger} Configuration 22.30 ms (10)
+nov 26 02:47:55 symfony [info] {sfWebDebugLogger} Factories 28.97 ms (1)
+nov 26 02:47:55 symfony [info] {sfWebDebugLogger} Action "login/validar" 38.12 ms (1)
+nov 26 02:47:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.61 ms (2)
+nov 26 02:47:55 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 26.26 ms (1)
+nov 26 02:47:55 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.77 ms (1)
+nov 26 02:47:55 symfony [info] {sfWebResponse} Send content (34732 o)
+nov 26 02:47:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /login with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 02:47:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:47:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:47:58 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 02:47:58 symfony [info] {myUser} User is not authenticated
+nov 26 02:47:58 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 02:47:58 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:47:58 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:47:58 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 02:47:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 02:47:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:47:58 symfony [info] {sfWebDebugLogger} Configuration 7.66 ms (9)
+nov 26 02:47:58 symfony [info] {sfWebDebugLogger} Factories 28.07 ms (1)
+nov 26 02:47:58 symfony [info] {sfWebDebugLogger} Action "login/index" 0.17 ms (1)
+nov 26 02:47:58 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 13.44 ms (1)
+nov 26 02:47:58 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.91 ms (1)
+nov 26 02:47:58 symfony [info] {sfWebResponse} Send content (32630 o)
+nov 26 02:48:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:48:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:48:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:48:36 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:48:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 02:48:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 02:48:36 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 02:48:36 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:48:36 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:48:36 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 02:48:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 02:48:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:48:36 symfony [info] {sfWebDebugLogger} Configuration 6.69 ms (9)
+nov 26 02:48:36 symfony [info] {sfWebDebugLogger} Factories 27.81 ms (1)
+nov 26 02:48:36 symfony [info] {sfWebDebugLogger} Action "login/validar" 29.62 ms (1)
+nov 26 02:48:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.52 ms (2)
+nov 26 02:48:36 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 12.85 ms (1)
+nov 26 02:48:36 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.91 ms (1)
+nov 26 02:48:36 symfony [info] {sfWebResponse} Send content (34692 o)
+nov 26 02:48:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 02:48:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 02:48:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 02:48:54 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 02:48:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 02:48:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 02:48:55 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 02:48:55 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:48:55 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 02:48:55 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 02:48:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 02:48:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 02:48:55 symfony [info] {sfWebDebugLogger} Configuration 7.22 ms (9)
+nov 26 02:48:55 symfony [info] {sfWebDebugLogger} Factories 28.25 ms (1)
+nov 26 02:48:55 symfony [info] {sfWebDebugLogger} Action "login/validar" 31.58 ms (1)
+nov 26 02:48:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.45 ms (2)
+nov 26 02:48:55 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 12.33 ms (1)
+nov 26 02:48:55 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.92 ms (1)
+nov 26 02:48:55 symfony [info] {sfWebResponse} Send content (34715 o)
+nov 26 04:38:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:38:41 symfony [info] {myUser} Automatic user logout due to timeout
+nov 26 04:38:41 symfony [info] {myUser} User is not authenticated
+nov 26 04:38:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:38:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:38:41 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:38:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:38:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "") - ()
+nov 26 04:38:41 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 04:38:41 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:38:41 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:38:41 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:38:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:38:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:38:41 symfony [info] {sfWebDebugLogger} Configuration 161.58 ms (9)
+nov 26 04:38:41 symfony [info] {sfWebDebugLogger} Factories 80.97 ms (1)
+nov 26 04:38:41 symfony [info] {sfWebDebugLogger} Action "login/validar" 26.92 ms (1)
+nov 26 04:38:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.51 ms (2)
+nov 26 04:38:41 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 17.26 ms (1)
+nov 26 04:38:41 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.82 ms (1)
+nov 26 04:38:41 symfony [info] {sfWebResponse} Send content (35044 o)
+nov 26 04:38:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/index with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:38:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:38:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:38:47 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:38:47 symfony [info] {myUser} User is not authenticated
+nov 26 04:38:47 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:38:47 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:38:47 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:38:47 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:38:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:38:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:38:47 symfony [info] {sfWebDebugLogger} Configuration 8.33 ms (9)
+nov 26 04:38:47 symfony [info] {sfWebDebugLogger} Factories 30.53 ms (1)
+nov 26 04:38:47 symfony [info] {sfWebDebugLogger} Action "login/index" 0.20 ms (1)
+nov 26 04:38:47 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 10.10 ms (1)
+nov 26 04:38:47 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.82 ms (1)
+nov 26 04:38:47 symfony [info] {sfWebResponse} Send content (32664 o)
+nov 26 04:42:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:42:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:42:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:42:30 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:42:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:42:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 04:42:30 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 04:42:30 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:30 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:30 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:42:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:42:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:42:30 symfony [info] {sfWebDebugLogger} Configuration 6.68 ms (9)
+nov 26 04:42:30 symfony [info] {sfWebDebugLogger} Factories 30.11 ms (1)
+nov 26 04:42:30 symfony [info] {sfWebDebugLogger} Action "login/validar" 41.43 ms (1)
+nov 26 04:42:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.75 ms (2)
+nov 26 04:42:30 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 11.73 ms (1)
+nov 26 04:42:30 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.88 ms (1)
+nov 26 04:42:30 symfony [info] {sfWebResponse} Send content (34709 o)
+nov 26 04:42:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:42:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:42:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:42:50 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:42:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:42:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 04:42:50 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 04:42:50 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:50 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:50 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:42:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:42:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:42:50 symfony [info] {sfWebDebugLogger} Configuration 6.50 ms (9)
+nov 26 04:42:50 symfony [info] {sfWebDebugLogger} Factories 29.44 ms (1)
+nov 26 04:42:50 symfony [info] {sfWebDebugLogger} Action "login/validar" 30.47 ms (1)
+nov 26 04:42:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.52 ms (2)
+nov 26 04:42:50 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 9.92 ms (1)
+nov 26 04:42:50 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 1.05 ms (1)
+nov 26 04:42:50 symfony [info] {sfWebResponse} Send content (34731 o)
+nov 26 04:42:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:42:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:42:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:42:53 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:42:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:42:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 04:42:53 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 04:42:53 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:53 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:53 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:42:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:42:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:42:53 symfony [info] {sfWebDebugLogger} Configuration 7.38 ms (9)
+nov 26 04:42:53 symfony [info] {sfWebDebugLogger} Factories 30.14 ms (1)
+nov 26 04:42:53 symfony [info] {sfWebDebugLogger} Action "login/validar" 32.92 ms (1)
+nov 26 04:42:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.48 ms (2)
+nov 26 04:42:53 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 11.26 ms (1)
+nov 26 04:42:53 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.83 ms (1)
+nov 26 04:42:53 symfony [info] {sfWebResponse} Send content (34733 o)
+nov 26 04:42:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/index with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:42:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:42:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:42:57 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:42:57 symfony [info] {myUser} User is not authenticated
+nov 26 04:42:57 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:42:57 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:57 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:42:57 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:42:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:42:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:42:57 symfony [info] {sfWebDebugLogger} Configuration 6.92 ms (9)
+nov 26 04:42:57 symfony [info] {sfWebDebugLogger} Factories 30.11 ms (1)
+nov 26 04:42:57 symfony [info] {sfWebDebugLogger} Action "login/index" 0.27 ms (1)
+nov 26 04:42:57 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 11.68 ms (1)
+nov 26 04:42:57 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.80 ms (1)
+nov 26 04:42:57 symfony [info] {sfWebResponse} Send content (32664 o)
+nov 26 04:43:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:43:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:43:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:43:02 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:43:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:43:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 04:43:02 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 04:43:02 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:43:02 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:43:02 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:43:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:43:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:43:02 symfony [info] {sfWebDebugLogger} Configuration 6.69 ms (9)
+nov 26 04:43:02 symfony [info] {sfWebDebugLogger} Factories 27.89 ms (1)
+nov 26 04:43:02 symfony [info] {sfWebDebugLogger} Action "login/validar" 28.52 ms (1)
+nov 26 04:43:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.43 ms (2)
+nov 26 04:43:02 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 10.39 ms (1)
+nov 26 04:43:02 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.92 ms (1)
+nov 26 04:43:02 symfony [info] {sfWebResponse} Send content (34709 o)
+nov 26 04:43:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/index with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:43:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:43:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:43:44 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:43:44 symfony [info] {myUser} User is not authenticated
+nov 26 04:43:44 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:43:44 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:43:44 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:43:44 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:43:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:43:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:43:44 symfony [info] {sfWebDebugLogger} Configuration 6.03 ms (9)
+nov 26 04:43:44 symfony [info] {sfWebDebugLogger} Factories 28.83 ms (1)
+nov 26 04:43:44 symfony [info] {sfWebDebugLogger} Action "login/index" 0.17 ms (1)
+nov 26 04:43:44 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 10.18 ms (1)
+nov 26 04:43:44 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.86 ms (1)
+nov 26 04:43:44 symfony [info] {sfWebResponse} Send content (32664 o)
+nov 26 04:43:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:43:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:43:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:43:49 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:43:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:43:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 04:43:49 symfony [info] {myUser} User is authenticated
+nov 26 04:43:49 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 04:43:49 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:43:49 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:43:49 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:43:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:43:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:43:49 symfony [info] {sfWebDebugLogger} Configuration 6.68 ms (9)
+nov 26 04:43:49 symfony [info] {sfWebDebugLogger} Factories 27.17 ms (1)
+nov 26 04:43:49 symfony [info] {sfWebDebugLogger} Action "login/validar" 31.33 ms (1)
+nov 26 04:43:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.55 ms (2)
+nov 26 04:43:49 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 10.44 ms (1)
+nov 26 04:43:49 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 1.44 ms (1)
+nov 26 04:43:49 symfony [info] {sfWebResponse} Send content (35099 o)
+nov 26 04:48:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/index with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:48:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:48:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:48:44 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:48:44 symfony [info] {myUser} User is not authenticated
+nov 26 04:48:44 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:48:44 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:44 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:44 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:48:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:48:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:48:44 symfony [info] {sfWebDebugLogger} Configuration 7.07 ms (9)
+nov 26 04:48:44 symfony [info] {sfWebDebugLogger} Factories 29.00 ms (1)
+nov 26 04:48:44 symfony [info] {sfWebDebugLogger} Action "login/index" 0.51 ms (1)
+nov 26 04:48:44 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 12.27 ms (1)
+nov 26 04:48:44 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.92 ms (1)
+nov 26 04:48:44 symfony [info] {sfWebResponse} Send content (32663 o)
+nov 26 04:48:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/index with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:48:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:48:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:48:46 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:48:46 symfony [info] {myUser} User is not authenticated
+nov 26 04:48:46 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:48:46 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:46 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:46 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:48:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:48:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Configuration 6.06 ms (9)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Factories 28.57 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Action "login/index" 0.18 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 10.74 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.95 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebResponse} Send content (32719 o)
+nov 26 04:48:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/index with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:48:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:48:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:48:46 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:48:46 symfony [info] {myUser} User is not authenticated
+nov 26 04:48:46 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:48:46 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:46 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:46 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:48:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:48:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Configuration 7.49 ms (9)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Factories 37.94 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Action "login/index" 0.18 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 14.04 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.87 ms (1)
+nov 26 04:48:46 symfony [info] {sfWebResponse} Send content (32719 o)
+nov 26 04:48:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/index with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:48:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:48:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:48:47 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:48:47 symfony [info] {myUser} User is not authenticated
+nov 26 04:48:47 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:48:47 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:47 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:47 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:48:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:48:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:48:47 symfony [info] {sfWebDebugLogger} Configuration 8.50 ms (9)
+nov 26 04:48:47 symfony [info] {sfWebDebugLogger} Factories 31.84 ms (1)
+nov 26 04:48:47 symfony [info] {sfWebDebugLogger} Action "login/index" 0.20 ms (1)
+nov 26 04:48:47 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 11.61 ms (1)
+nov 26 04:48:47 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.80 ms (1)
+nov 26 04:48:47 symfony [info] {sfWebResponse} Send content (32719 o)
+nov 26 04:48:56 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:48:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:48:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:48:56 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:48:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:48:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 04:48:56 symfony [info] {sfFrontWebController} Redirect to "http://coopeud.com/frontend_dev.php/login"
+nov 26 04:48:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+nov 26 04:48:56 symfony [info] {sfWebResponse} Send header "Location: http://coopeud.com/frontend_dev.php/login"
+nov 26 04:48:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Configuration 6.72 ms (8)
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Factories 30.20 ms (1)
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Action "login/validar" 46.37 ms (1)
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.61 ms (2)
+nov 26 04:48:56 symfony [info] {sfWebResponse} Send content (112 o)
+nov 26 04:48:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /login with parameters array (  'module' => 'login',  'action' => 'index',)
+nov 26 04:48:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:48:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:48:56 symfony [info] {loginActions} Call "loginActions->executeIndex()"
+nov 26 04:48:56 symfony [info] {myUser} User is not authenticated
+nov 26 04:48:56 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/indexSuccess.php"
+nov 26 04:48:56 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:56 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:48:56 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:48:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:48:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Configuration 7.19 ms (9)
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Factories 29.91 ms (1)
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Action "login/index" 0.20 ms (1)
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} View "Success" for "login/index" 10.78 ms (1)
+nov 26 04:48:56 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.86 ms (1)
+nov 26 04:48:56 symfony [info] {sfWebResponse} Send content (32738 o)
+nov 26 04:49:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /login/validar with parameters array (  'module' => 'login',  'action' => 'validar',)
+nov 26 04:49:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov 26 04:49:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov 26 04:49:04 symfony [info] {loginActions} Call "loginActions->executeValidar()"
+nov 26 04:49:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov 26 04:49:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.password AS u__0, u.password AS u__0, u.id AS u__1 FROM usuario u WHERE (u.nickname = "cyara") - ()
+nov 26 04:49:04 symfony [info] {myUser} User is authenticated
+nov 26 04:49:04 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\modules/login/templates/validarSuccess.php"
+nov 26 04:49:04 symfony [info] {sfPHPView} Decorate content with "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:49:04 symfony [info] {sfPHPView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/layout.php"
+nov 26 04:49:04 symfony [info] {sfPartialView} Render "D:\VIRTUAL\coopeud\apps\frontend\templates/_menu.php"
+nov 26 04:49:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov 26 04:49:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov 26 04:49:04 symfony [info] {sfWebDebugLogger} Configuration 7.22 ms (9)
+nov 26 04:49:04 symfony [info] {sfWebDebugLogger} Factories 29.56 ms (1)
+nov 26 04:49:04 symfony [info] {sfWebDebugLogger} Action "login/validar" 35.55 ms (1)
+nov 26 04:49:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.55 ms (2)
+nov 26 04:49:04 symfony [info] {sfWebDebugLogger} View "Success" for "login/validar" 10.48 ms (1)
+nov 26 04:49:04 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.81 ms (1)
+nov 26 04:49:04 symfony [info] {sfWebResponse} Send content (35117 o)

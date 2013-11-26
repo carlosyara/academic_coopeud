@@ -1,0 +1,774 @@
+Afiliado:
+  connection: doctrine
+  tableName: afiliado
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    persona_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_afiliacion:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Persona:
+      local: persona_id
+      foreign: id
+      type: one
+    Asociado:
+      local: id
+      foreign: afiliado_id
+      type: many
+    Beneficiario:
+      local: id
+      foreign: afiliado_id
+      type: many
+    DetalleInscripcion:
+      local: id
+      foreign: persona_id
+      type: many
+Asociado:
+  connection: doctrine
+  tableName: asociado
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    afiliado_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Afiliado:
+      local: afiliado_id
+      foreign: id
+      type: one
+    Beneficiario:
+      local: id
+      foreign: asociado_id
+      type: many
+    Inscripcion:
+      local: id
+      foreign: asociado_id
+      type: many
+Beneficiario:
+  connection: doctrine
+  tableName: beneficiario
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    asociado_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    afiliado_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    parentesco:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Afiliado:
+      local: afiliado_id
+      foreign: id
+      type: one
+    Asociado:
+      local: asociado_id
+      foreign: id
+      type: one
+DetalleInscripcion:
+  connection: doctrine
+  tableName: detalle_inscripcion
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    inscripcion_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    persona_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    coopago:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+  relations:
+    Inscripcion:
+      local: inscripcion_id
+      foreign: id
+      type: one
+    Afiliado:
+      local: persona_id
+      foreign: id
+      type: one
+Evento:
+  connection: doctrine
+  tableName: evento
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    valor_total:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    proveedor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo-evento_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    estado:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    con_copago:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    numero_asistentes:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    cupo_disponible:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    subisidio_copago:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    lugar:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_inicio:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_fin:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_max_inscripcion:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_max_cancelacion:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    observaciones:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Proveedor:
+      local: proveedor_id
+      foreign: id
+      type: one
+    TipoEvento:
+      local: tipo-evento_id
+      foreign: id
+      type: one
+    EventoCierre:
+      local: id
+      foreign: evento_id
+      type: many
+    Inscripcion:
+      local: id
+      foreign: evento_id
+      type: many
+    PagoProveedor:
+      local: id
+      foreign: evento_id
+      type: many
+EventoCierre:
+  connection: doctrine
+  tableName: evento_cierre
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    evento_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    total_recaudo:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    diferencia:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    total_asistentes:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Evento:
+      local: evento_id
+      foreign: id
+      type: one
+Funcionario:
+  connection: doctrine
+  tableName: funcionario
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    persona_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_ingreso:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Persona:
+      local: persona_id
+      foreign: id
+      type: one
+Inscripcion:
+  connection: doctrine
+  tableName: inscripcion
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    evento_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    asociado_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_inscripcion:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    estado:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Asociado:
+      local: asociado_id
+      foreign: id
+      type: one
+    Evento:
+      local: evento_id
+      foreign: id
+      type: one
+    DetalleInscripcion:
+      local: id
+      foreign: inscripcion_id
+      type: many
+    PagoInscripcion:
+      local: id
+      foreign: inscripcion_id
+      type: many
+PagoInscripcion:
+  connection: doctrine
+  tableName: pago_inscripcion
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    inscripcion_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    cuotas:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    total:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    estado:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    fecha_pago:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Inscripcion:
+      local: inscripcion_id
+      foreign: id
+      type: one
+PagoProveedor:
+  connection: doctrine
+  tableName: pago_proveedor
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    evento_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_pago:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    proveedor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Evento:
+      local: evento_id
+      foreign: id
+      type: one
+    Proveedor:
+      local: proveedor_id
+      foreign: id
+      type: one
+Permiso:
+  connection: doctrine
+  tableName: permiso
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    RolPermiso:
+      local: id
+      foreign: permiso_id
+      type: many
+Persona:
+  connection: doctrine
+  tableName: persona
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    documento:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nombre:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    apellido:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_nacimiento:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Afiliado:
+      local: id
+      foreign: persona_id
+      type: many
+    Funcionario:
+      local: id
+      foreign: persona_id
+      type: many
+    Usuario:
+      local: id
+      foreign: persona_id
+      type: many
+Proveedor:
+  connection: doctrine
+  tableName: proveedor
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    razon_social:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nit:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Evento:
+      local: id
+      foreign: proveedor_id
+      type: many
+    PagoProveedor:
+      local: id
+      foreign: proveedor_id
+      type: many
+Rol:
+  connection: doctrine
+  tableName: rol
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    RolPermiso:
+      local: id
+      foreign: rol_id
+      type: many
+    RolUsuario:
+      local: id
+      foreign: rol_id
+      type: many
+RolPermiso:
+  connection: doctrine
+  tableName: rol_permiso
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    rol_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    permiso_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Permiso:
+      local: permiso_id
+      foreign: id
+      type: one
+    Rol:
+      local: rol_id
+      foreign: id
+      type: one
+RolUsuario:
+  connection: doctrine
+  tableName: rol_usuario
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    usuario_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    rol_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Rol:
+      local: rol_id
+      foreign: id
+      type: one
+    Usuario:
+      local: usuario_id
+      foreign: id
+      type: one
+TipoEvento:
+  connection: doctrine
+  tableName: tipo_evento
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Evento:
+      local: id
+      foreign: tipo-evento_id
+      type: many
+Usuario:
+  connection: doctrine
+  tableName: usuario
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    password:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nickname:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    persona_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Persona:
+      local: persona_id
+      foreign: id
+      type: one
+    RolUsuario:
+      local: id
+      foreign: usuario_id
+      type: many

@@ -5,6 +5,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=coopeud
-      username: usr_coopeud
+      dsn:      mysql:host=localhost;dbname=eventos_coopeud
+      username: coopeud
       password: coopeud

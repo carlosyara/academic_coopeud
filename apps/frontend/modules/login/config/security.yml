@@ -1,0 +1,23 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+index:
+  is_secure: false
+
+validar:
+  is_secure: false
+
+cambioClave:
+  is_secure: on
+
+enconstruccion:
+  is_secure: false
+
+error404:
+  is_secure: false
+
+erroreliminacion:
+  is_secure: false
+
+authenticated:
+  is_secure: false

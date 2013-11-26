@@ -9,6 +9,22 @@
     <?php include_javascripts() ?>
   </head>
   <body>
-    <?php echo $sf_content ?>
+  	<div class="navbar navbar-fixed-top navbar-inverse">
+	  <div class="container">
+	  <div class="collapse navbar-collapse">
+	  <?php include_partial('global/menu');?>
+	  </div>
+	  </div>
+  	</div>
+  	<div class="container body">
+	  	<div class="jumbotron">
+	  		<div class="logo"></div>
+	  		<div class="text">
+		  		<h1>COOPEUD</h1>
+		  		<p>Sistema de gestion de eventos cooperativa de empleados Universidad Distrital</p>
+	  		</div>
+	  	</div>
+    	<?php echo $sf_content ?>
+    </div>
   </body>
 </html>
