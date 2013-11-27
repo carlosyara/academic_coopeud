@@ -3,15 +3,15 @@
 <table>
   <thead>
     <tr>
-      <th>Id</th>
       <th>Nombre</th>
+      <th>Editar</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($permisos as $permiso): ?>
     <tr>
-      <td><a href="<?php echo url_for('permisos/show?id='.$permiso->getId()) ?>"><?php echo $permiso->getId() ?></a></td>
       <td><?php echo $permiso->getNombre() ?></td>
+      <td><a href="<?php echo url_for('permisos/edit?id='.$permiso->getId()) ?>">Editar</a></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

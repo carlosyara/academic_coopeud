@@ -25,7 +25,15 @@ class afiliadosActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new afiliadoForm();
+  	if($this->getUser()->hasCredential('TODOS') || $this->getUser()->hasCredential('CREAR ASOCIADOS') || $this->getUser()->hasCredential('CREAR BENEFICIARIOS')){
+	  	$id_persona = $request->getParameter('persona_id');
+	  	$create		= $request->getParameter('create');
+	  	if(!empty($id_persona) && !empty($create)){
+	    	$this->form = new afiliadoForm();
+	  	}else{
+	  		$this->redirect('login/authenticated');
+	  	}
+  	}
   }
 
   public function executeCreate(sfWebRequest $request)

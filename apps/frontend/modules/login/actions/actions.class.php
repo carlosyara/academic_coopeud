@@ -46,6 +46,7 @@ class loginActions extends sfActions
   			$this->getUser()->setAttribute('NombreUsuario', $nick);
 			$this->getUser()->setAttribute('IdUsuario',  $ussId);
 			$this->getUser()->setAttribute('MensajeUsuario',  '');	
+			$this->redirect('login/select_rol');
   		} else {
   			$this->redirect('login/index');
   		}
@@ -53,8 +54,37 @@ class loginActions extends sfActions
   		$this->redirect('login/index');
   	}
   }
-  public function asignar_rol(sfWebRequest $request){
-  	$ussId = $this->getUser()->getAttribute('idUsuario');
+  public function executeSelect_rol(sfWebRequest $request){
+  	$this->getUser()->setAttribute('IdRol',  '');
+  	$ussId = $this->getUser()->getAttribute('IdUsuario');
+  	$this->roles = Doctrine::getTable('RolUsuario')
+  	->findBy('usuario_id',$ussId );
+  }
+  public function executeAsignar_rol(sfWebRequest $request){
+  	$this->getUser()->clearCredentials();
+  	$rolId = $request->getParameter('IdRol');
+  	$this->return = false;
+  	if(!empty($rolId)){
+	  	$ussId = $this->getUser()->getAttribute('IdUsuario');
+	  	$roles = Doctrine::getTable('RolUsuario')
+	  	->findBy('usuario_id',$ussId );
+	  	$rolesUsuario = array();
+	  	foreach ($roles AS $rol){
+	  		$rolesUsuario[] = $rol->getRolId();
+	  	}
+	  	if(in_array($rolId, $rolesUsuario)){
+	  		$this->getUser()->setAttribute('IdRol',  $rolId);
+	  		$permisos = Doctrine::getTable('RolPermiso')
+	  		->findBy('rol_id', $rolId);
+	  		foreach ($permisos as $perm){
+	  			$credencial= $perm->getPermiso();
+				$this->getUser()->addCredential($credencial);
+	  		}
+	  		$this->return = true;
+	  	}
+  	}
+  }
+  public function executeAuthenticated(sfWebRequest $request){
   	
   }
 }

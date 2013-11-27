@@ -32,7 +32,7 @@ class sfWidgetFormDateJQueryUI extends sfWidgetForm
     $this->addOption('number_of_months', 1);
     $this->addOption('show_button_panel',  false);
     $this->addOption('theme', '/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css');
-
+	$this->addOption('year_range', '-30:+0');
     
     parent::configure($options, $attributes);
   }
@@ -61,6 +61,7 @@ class sfWidgetFormDateJQueryUI extends sfWidgetForm
     $cy = $this->getOption("change_year") ? "true" : "false";
     $nom = $this->getOption("number_of_months");
     $sbp = $this->getOption("show_button_panel") ? "true" : "false";
+    $yrs = $this->getOption("year_range");
 
     if ($culture!='en')
     {
@@ -72,6 +73,7 @@ class sfWidgetFormDateJQueryUI extends sfWidgetForm
     params.changeYear = $cy;
     params.numberOfMonths = $nom;
     params.showButtonPanel = $sbp;
+    params.yearRange = "$yrs";
     $("#$id").datepicker(params);
 	});
 </script>
@@ -86,7 +88,8 @@ EOHTML;
     changeMonth : $cm,
     changeYear : $cy,
     numberOfMonths : $nom,
-    showButtonPanel : $sbp };
+    showButtonPanel : $sbp,
+    yearRange : "$yrs" };
     $("#$id").datepicker(params);
 	});
 </script>

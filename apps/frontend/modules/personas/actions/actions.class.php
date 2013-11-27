@@ -16,6 +16,17 @@ class personasActions extends sfActions
       ->createQuery('a')
       ->execute();
   }
+public function executeList_create(sfWebRequest $request)
+  {
+  	if($this->getUser()->hasCredential('TODOS') || $this->getUser()->hasCredential('CREAR ASOCIADOS') || $this->getUser()->hasCredential('CREAR BENEFICIARIOS') || $this->getUser()->hasCredential('CREAR FUNCIONARIOS')){
+	  	$this->create	= $request->getParameter('create');
+	    $this->personas = Doctrine_Core::getTable('persona')
+	      ->createQuery('a')
+	      ->execute();
+  	} else {
+  		 $this->redirect('login/authenticated');
+  	}
+  }
 
   public function executeShow(sfWebRequest $request)
   {
@@ -25,6 +36,7 @@ class personasActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
+  	$this->create = $request->getParameter('create');
     $this->form = new personaForm();
   }
 
@@ -41,6 +53,7 @@ class personasActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
+  	$this->create = null;
     $this->forward404Unless($persona = Doctrine_Core::getTable('persona')->find(array($request->getParameter('id'))), sprintf('Object persona does not exist (%s).', $request->getParameter('id')));
     $this->form = new personaForm($persona);
   }
@@ -72,7 +85,10 @@ class personasActions extends sfActions
     if ($form->isValid())
     {
       $persona = $form->save();
-
+      $create = $request->getParameter('create');
+      if($create == 'asociado' || $create == 'beneficiario' ){
+      	$this->redirect('afiliados/new?persona_id='.$persona->getId().'&create='.$create);
+      }
       $this->redirect('personas/edit?id='.$persona->getId());
     }
   }

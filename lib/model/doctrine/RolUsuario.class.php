@@ -12,5 +12,7 @@
  */
 class RolUsuario extends BaseRolUsuario
 {
-
+	public function __toString(){
+		return $this->getRol();
+	}
 }

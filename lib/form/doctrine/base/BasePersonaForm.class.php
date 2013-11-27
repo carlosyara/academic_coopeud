@@ -19,7 +19,7 @@ abstract class BasePersonaForm extends BaseFormDoctrine
       'documento'        => new sfWidgetFormInputText(),
       'nombre'           => new sfWidgetFormInputText(),
       'apellido'         => new sfWidgetFormInputText(),
-      'fecha_nacimiento' => new sfWidgetFormDate(),
+      'fecha_nacimiento' => new sfWidgetFormDateJQueryUI(array("change_month" => true, "change_year" => true, "year_range" => "-100:+0")),
     ));
 
     $this->setValidators(array(

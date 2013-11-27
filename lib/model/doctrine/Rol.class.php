@@ -12,5 +12,7 @@
  */
 class Rol extends BaseRol
 {
-
+	public function __toString(){
+		return $this->getNombre();
+	}
 }

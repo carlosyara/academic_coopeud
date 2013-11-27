@@ -12,5 +12,7 @@
  */
 class Permiso extends BasePermiso
 {
-
+ public function __toString(){
+ 	return $this->getNombre();
+ } 
 }
